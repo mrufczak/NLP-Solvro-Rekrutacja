@@ -68,5 +68,6 @@ W drugim terminalu (z aktywnym `.venv`) uruchom klienta
 ```bash
 python client.py
 ```
+---
 KOD MOŻE ZAWIERAĆ BŁĘDY (nawet sporo :( )
 Zadanie rozwiązywałem z pomocą gemini, gdyż nie miałem wystarczająco czasu na przeczytanie wystarczającej dokumentacji i napisanie całkowicie samemu kodu. Niemniej planuje nauczyć się w wolnym czasie wszystkiego, a zadanie chciałem wykonać by móc przejść do kolejnego etapu rekrutacji i nauczyć się wszystkiego po drodze. Jestem z kierunku SI na inżynierce, więc prędzej czy później i tak będę sie uczył podobnych rzeczy, a w tym momencie niestety brakuje mi czasu. Pozdrawiam :)
