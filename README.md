@@ -2,11 +2,11 @@
 
 Projekt ten jest implementacją narzędzia typu **RAG (Retrieval-Augmented Generation)** udostępnianego przez serwer **MCP (Model Context Protocol)**. 
 
-Celem jest stworzenie inteligentnego asystenta, który potrafi odpowiadać na pytania dotyczące koktajli oraz sugerować drinki na podstawie podanych składników. Cała wiedza asystenta jest ograniczona *wyłącznie* do dostarczonego pliku `thecocktailsdb.json`, co oznacza, że nie będzie on odpowiadał na pytania spoza tej dziedziny.
+Celem jest stworzenie inteligentnego asystenta, który potrafi odpowiadać na pytania dotyczące koktajli oraz sugerować drinki na podstawie podanych składników. Cała wiedza asystenta jest ograniczona wyłącznie do dostarczonego pliku `thecocktailsdb.json`, co oznacza, że nie będzie on odpowiadał na pytania spoza tej dziedziny.
 
 ---
 
-## 🚀 Główne Funkcje
+##  Główne Funkcje
 
 * **Odpowiadanie na pytania:** Możesz zapytać o przepis na dowolny koktajl z bazy (np. "Jak zrobić Mojito?").
 * **Sugerowanie koktajli:** Możesz zapytać o koktajle zawierające konkretne składniki (np. "Co mogę zrobić z ginu i soku z cytryny?").
@@ -14,7 +14,7 @@ Celem jest stworzenie inteligentnego asystenta, który potrafi odpowiadać na py
 
 ---
 
-## 🛠️ Użyte Technologie
+##  Użyte Technologie
 
 * **Python 3.10+**
 * **Serwer API:** `FastMCP` (zgodnie z wymaganiami)
@@ -54,7 +54,7 @@ Przed instalacją upewnij się, że masz na swoim systemie:
 
 ## 2. Uruchomienie Narzędzia
 
-Narzędzie składa się z dwóch części: serwera RAG i klienta konsolowego(lub LMStusio). Musisz je uruchomić w **dwóch osobnych terminalach**.
+Narzędzie składa się z dwóch części: serwera RAG i klienta konsolowego (lub LMStusio). Musisz je uruchomić w **dwóch osobnych terminalach**.
 
 ### Terminal 1: Uruchomienie Serwera RAG
 
