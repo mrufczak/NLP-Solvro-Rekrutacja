@@ -36,7 +36,21 @@ Przed instalacją upewnij się, że masz na swoim systemie:
 
 ---
 
-## 1. Instalacja
+## 1. Konfiguracja (Krytyczne!)
+
+Przed pierwszym uruchomieniem musisz poinformować serwer, gdzie znajduje się Twój pobrany model LLM.
+
+1.  Otwórz plik `server.py` w edytorze tekstu.
+2.  Znajdź zmienną `SCIEZKA_DO_MODELU` (linia 16).
+3.  Zaktualizuj ścieżkę, aby wskazywała na **dokładną lokalizację** pobranego pliku `.gguf` na Twoim komputerze.
+
+    *Przykład na Linuksie (jeśli pobrałeś przez LM Studio):*
+    ```python
+    SCIEZKA_DO_MODELU = "/home/mrufczak/.lmstudio/models/lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf"
+    ```
+
+---
+## 2. Instalacja
 
 1.  Sklonuj repozytorium (lub pobierz pliki) i przejdź do folderu projektu.
 2.  Stwórz i aktywuj środowisko wirtualne:
@@ -52,7 +66,7 @@ Przed instalacją upewnij się, że masz na swoim systemie:
 ---
 
 
-## 2. Uruchomienie Narzędzia
+## 3. Uruchomienie Narzędzia
 
 Narzędzie składa się z dwóch części: serwera RAG i klienta konsolowego (lub LMStusio). Musisz je uruchomić w **dwóch osobnych terminalach**.
 
