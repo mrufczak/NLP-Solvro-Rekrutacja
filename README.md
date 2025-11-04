@@ -36,9 +36,7 @@ Przed instalacją upewnij się, że masz na swoim systemie:
 
 ---
 
-## 1. Konfiguracja (Krytyczne!)
-
-Przed pierwszym uruchomieniem musisz poinformować serwer, gdzie znajduje się Twój pobrany model LLM.
+## 1. Konfiguracja 
 
 1.  Otwórz plik `server.py` w edytorze tekstu.
 2.  Znajdź zmienną `SCIEZKA_DO_MODELU` (linia 16).
