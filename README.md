@@ -30,7 +30,7 @@ Celem jest stworzenie inteligentnego asystenta, który potrafi odpowiadać na py
 
 Przed instalacją upewnij się, że masz na swoim systemie:
 1.  **Python 3.10** lub nowszy oraz `pip`
-2.  Pobrany plik modelu LLM w formacie **GGUF**. Projekt był testowany z modelem `Meta-Llama-3-8B-Instruct-Q4_K_M.gguf`. Można wybrać własny model.
+2.  Pobrany plik modelu LLM w formacie **GGUF**. Projekt był testowany z modelem `Meta-Llama-3-8B-Instruct-Q4_K_M.gguf`. Trzeba pobrać własny model.
 3.  Plik z danymi `thecocktailsdb.json` w głównym folderze projektu.
 
 ---
