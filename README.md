@@ -9,7 +9,7 @@ Celem jest stworzenie inteligentnego asystenta, który potrafi odpowiadać na py
 ##  Główne Funkcje
 
 * **Odpowiadanie na pytania:** Możesz zapytać o przepis na dowolny koktajl z bazy (np. "Jak zrobić Mojito?").
-* **Sugerowanie koktajli:** Możesz zapytać o koktajle zawierające konkretne składniki (np. "Co mogę zrobić z ginu i soku z cytryny?").
+* **Sugerowanie koktajli:** Możesz zapytać o koktajle zawierające konkretne składniki (np. "Co mogę zrobić z ginu i soku z cytryny?")
 * **Ograniczona wiedza:** System jest "zmuszony" do korzystania wyłącznie z dostarczonych danych RAG i nie będzie odpowiadał na pytania ogólne (np. "Kto jest prezydentem Polski?").
 
 ---
@@ -29,9 +29,8 @@ Celem jest stworzenie inteligentnego asystenta, który potrafi odpowiadać na py
 ## ⚙️ Wymagania Wstępne
 
 Przed instalacją upewnij się, że masz na swoim systemie:
-1.  **Python 3.10** lub nowszy oraz `pip`.
-2.  Pobrany plik modelu LLM w formacie **GGUF**. Projekt był testowany z modelem `Meta-Llama-3-8B-Instruct-Q4_K_M.gguf`.
-    * *Możesz pobrać ten model (lub mniejszy, np. Q2_K) za pomocą aplikacji LM Studio.*
+1.  **Python 3.10** lub nowszy oraz `pip`
+2.  Pobrany plik modelu LLM w formacie **GGUF**. Projekt był testowany z modelem `Meta-Llama-3-8B-Instruct-Q4_K_M.gguf`. Można wybrać własny model.
 3.  Plik z danymi `thecocktailsdb.json` w głównym folderze projektu.
 
 ---
@@ -44,7 +43,7 @@ Przed instalacją upewnij się, że masz na swoim systemie:
 
     *Przykład na Linuksie (jeśli pobrałeś przez LM Studio):*
     ```python
-    SCIEZKA_DO_MODELU = "/home/mrufczak/.lmstudio/models/lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf"
+    SCIEZKA_DO_MODELU = "/Meta-Llama-3-8B-Instruct-GGUF/Meta-Llama-3-8B-Instruct-Q4_K_M.gguf"
     ```
 
 ---
@@ -66,11 +65,11 @@ Przed instalacją upewnij się, że masz na swoim systemie:
 
 ## 3. Uruchomienie Narzędzia
 
-Narzędzie składa się z dwóch części: serwera RAG i klienta konsolowego (lub LMStusio). Musisz je uruchomić w **dwóch osobnych terminalach**.
+Narzędzie składa się z dwóch części: serwera RAG i klienta konsolowego (lub LMStusio). Musisz je uruchomić w **dwóch osobnych terminalach**
 
 ### Terminal 1: Uruchomienie Serwera RAG
 
-W pierwszym terminalu (z aktywnym `.venv`) uruchom serwer `FastMCP`.
+W pierwszym terminalu (z aktywnym `.venv`) uruchom serwer `FastMCP`
 
 ```bash
 fastmcp run server.py:server --transport http --port 8000
