@@ -48,12 +48,6 @@ def create_document_from_drink(drink_data: dict) -> Document:
 #  Funkcja 'format_docs' 
 def format_docs(docs: list[Document]) -> str:
     return "\n\n\n\n".join([d.page_content for d in docs])
-
-print(f"Ładowanie modelu LlamaCpp z: {SCIEZKA_DO_MODELU}...")
-
-
-
-print("Model LlamaCpp załadowany pomyślnie.")
 # =================================================================
 # GŁÓWNA LOGIKA APLIKACJI
 # =================================================================
